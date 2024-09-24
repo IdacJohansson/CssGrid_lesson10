@@ -1,100 +1,102 @@
-body{
-    height: 100vh;  
-} 
-
-main{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    height: 100%;
+body {
+  height: 100vh;
 }
 
-.grid-container{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, minmax(auto, 1fr));
-    gap: 24px; 
-    width: 100%;
-    border: black solid;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.grid-element{
-    max-width: 448px;
-    width: 100%;
-    min-height: 195px;
-    height: 100%;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 16px;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  margin: auto;
+  border: black solid;
 }
 
-.blue{
-    background-color: blue;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+.blue {
+  background-color: blue;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
 }
 
-.green{
-    background-color: green;
-    grid-column: 1;
-    grid-row: 2;
+.green {
+  background-color: green;
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 3;
 }
 
-.red{
-    background-color: red;
-    grid-column: 1;
-    grid-row: 3;
+.red {
+  background-color: red;
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 6;
 }
 
-.yellow{
-    background-color: yellow;
-    grid-column: 2;
-    grid-row: 1;
+.yellow {
+  background-color: yellow;
+  grid-column: 5 / span 2;
+  grid-row: 1 / span 2;
 }
 
-.pink{
-    background-color: pink;
-    grid-column: 2;
-    grid-row: 2;
+.purple {
+  background-color: purple;
+  grid-column: 5 / span 2;
+  grid-row: 3 / span 2;
 }
 
-.purple{
-    background-color: purple;
-    grid-column: 2;
-    grid-row: 3;
+.pink {
+  background-color: pink;
+  grid-column: 5 / span 2;
+  grid-row: 5 / span 2;
 }
 
-.white{
-    background-color: white;
-    border: black solid 1px;
-    grid-column: 3;
-    grid-row: 1;
+.brown {
+  background-color: brown;
+  grid-column: 1 / span 2;
+  grid-row: 7 / span 4;
 }
 
-.black{
-    background-color: black;
-    grid-column: 2;
-    grid-row: 2;
+.orange {
+  background-color: orange;
+  grid-row: 7 / span 2;
 }
 
-.orange{
-    background-color: orange;
-    grid-column: 3;
-    grid-row: 3;
+.black {
+  background-color: black;
+  grid-row: 9 / span 2;
 }
 
-.lime{
-    background-color: lime;
-    grid-column: 1;
-    grid-row: 4;
+.gray {
+  background-color: gray;
+  grid-row: 7 / span 4;
 }
 
-.brown{
-    background-color: brown;
-    grid-column: 2;
-    grid-row: 4;
+.coral {
+  background-color: coral;
+  grid-column: 4 / span 2;
+  grid-row: 7 / span 4;
 }
 
-.light-coral{
-    background-color: lightcoral;
-    grid-column: 3;
-    grid-row: 4;
+.lightblue {
+  background-color: lightblue;
+  grid-column: 1 / span 6;
+  grid-row: 11 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
 }
 
+.my-color-palette-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  padding: 5px;
+}
